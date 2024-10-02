@@ -15,24 +15,28 @@
 <body>
     <header>
         <div class="container-nav">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Client</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+
+<nav>
+            <ul class="menu">
+                <li><a href="#" class="menu__item">Home</a></li>
+                <li><a href="#intro" class="menu__item">About</a></li>
+                <li><a href="#about-me" class="menu__item">Services</a></li>
+                <li><a href="#portfolio" class="menu__item">Portfolio</a></li>
+                <li><a href="#services" class="menu__item">Blog</a></li>
+                <li><a href="#skills" class="menu__item">Resume</a></li>
+                <li><a href="#testimonial" class="menu__item">Client</a></li>
+                <li><a href="#contact" class="menu__item">Contact</a></li>
                 <button class="btn-download-red">Download CV</button>
             </ul>
-            
         </nav>
+        </div>
+        
+       
+    
     </div>
     </header>
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
         <div class="social-icons">
             <a href="#"><img src="img/Linked.png" alt="LinkedIn"></a>
@@ -42,8 +46,8 @@
 
         <div class="content-all">
             <div class="content">
-            <h1>Hello, I’m Johan Deo <br><span>Professional Designer.</span></h1>
-            <p>Conveniently customize proactive web services for leveraged without continually aggregate frictionle ou wellies richard.</p>
+            <h1>Hello, I’m Johan Deo <br><span style="font-size: 58px;">Professional Designer.</span></h1>
+            <p id="subtitle-main">Conveniently customize proactive web services for leveraged without continually aggregate frictionle ou wellies richard.</p>
             <div class="buttons">
                 <button class="btn-hire">Hire Me</button>
                 <button class="btn-download">Download CV</button>
@@ -61,12 +65,12 @@
     </section>
 
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
         <div class="about-content">
-            <div class="image-placeholder">
-                <div class="brush-stroke"></div>
-            </div>
+
+                <div class="brush-stroke"> <img src="./img/aboutme.png" alt=""></div>
+
             <div class="info">
                 <h2>About Me</h2>
                 <h3>Johan Deo </h3>
@@ -88,7 +92,7 @@
     </section>
 
     
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
         <div class="portfolio-header">
             <h2>Portfolio</h2>
@@ -121,7 +125,7 @@
     </section>
 
     
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
         <div class="services-header">
             <h2>Why Choose Us</h2>
@@ -177,7 +181,7 @@
     </section>
 
     
-    <section class="skills-experience">
+    <section class="skills-experience" id="skills">
         <div class="container_skills">
             <div class="skills__text">
         <div class="skills-header">
@@ -240,7 +244,7 @@
     </section>
 
     
-    <section class="testimonial">
+    <section class="testimonial" id="testimonial">
         <div class="container">
         <div class="testimonial-header">
             <h2>Testimonial</h2>
@@ -267,7 +271,7 @@
                 </div>
             </div>
             <div class="test-photo">
-                <p class="tst-p"></p>
+                <div class="tst-p"><img src="./img/mike.jpg" alt=""></div>
             </div>
         </div>
     
@@ -287,7 +291,7 @@
                 </div>
             </div>
             <div class="test-photo">
-                <p class="tst-p"></p>
+                <div class="tst-p"><img src="./img/mike.jpg" alt=""></div>
             </div>
         </div>
     
@@ -307,7 +311,7 @@
                 </div>
             </div>
             <div class="test-photo">
-                <p class="tst-p"></p>
+                <div class="tst-p"><img src="./img/mike.jpg" alt=""></div>
             </div>
         </div>
 
@@ -391,7 +395,7 @@
     </section>
     
     
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
         <div class="contact-container">
             <div class="contact-info">
