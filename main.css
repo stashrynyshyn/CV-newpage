@@ -10,7 +10,7 @@ body {
     color: white;
 }
 .container{
-    max-width: 1350px;
+    
     margin: 0 auto;
 }
 .container_skills{
@@ -23,6 +23,7 @@ header {
     justify-content: space-between;
     padding: 20px 50px;
     background-color: #1c1e26;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -126,6 +127,7 @@ p {
     cursor: pointer;
     color: #fff;
     font-family: "Outfit";
+    background: #FF6347;
 }
 .btn-hire {
     background-color: #FF6347;  
@@ -145,11 +147,47 @@ p {
     width: 50px;
     height: 50px;
 }
+.image-placeholder-main{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.main-banner-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/main-bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.content-all{
+    display: flex;
+}
 
+@media screen and (max-width: 490px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+a:hover{
+    color: #FF6347;
+}
 
 
 /* ----------------------------------- */ 
 
+
+
+@media screen and (max-width: 400px){
+    .about-content{
+flex-direction: column;
+    }
+}
 
 .about-me {
     display: flex;
@@ -192,7 +230,7 @@ p {
 
 .info h2 {
     font-size: 24px;
-    color: #FF6347;
+   
 }
 
 .info h3 {
@@ -230,11 +268,21 @@ p {
 }
 
 .details strong {
-    color: #FF6347;
+    
+}
+.btn-download-red {
+    background: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
+
 .btn-download {
-    background-color: #FF6347;
+    background: #FF6347;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -337,13 +385,16 @@ p {
     height: 600px;
 }
 
+
 .services-header h2 {
     color: #FF6347;
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .services-header h3 {
+    text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -424,18 +475,30 @@ p {
     height: 700px;
 }
 
-.skills-header {
+/* .skills-header {
     flex: 1;
-}
+} */
 
 .skills-header h2 {
-    color: #FF6347;
-    font-size: 24px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.15em;
+    padding-bottom: 15px;
+    
+    
 }
 
 .skills-header h3 {
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: Outfit;
+font-size: 36px;
+font-weight: 700;
+line-height: 35px;
+text-align: left;
+
 }
 
 .tabs {
@@ -458,9 +521,9 @@ p {
     background-color: #444;
 }
 
-.skills-content {
+/* .skills-content {
     flex: 2;
-}
+} */
 
 .skill {
     margin-bottom: 20px;
@@ -518,6 +581,10 @@ p {
     font-size: 24px;
     margin-bottom: 10px;
 }
+.testimonial-title{
+    display: flex;
+    justify-content: space-between;
+}
 
 .testimonial-header h3 {
     font-size: 36px;
@@ -545,7 +612,7 @@ p {
 
 .position {
     font-size: 16px;
-    color: #888;
+    
     margin-bottom: 15px;
 }
 
@@ -564,6 +631,18 @@ p {
 .quote-icon img {
     width: 24px;
     height: auto;
+}
+
+.tst-p{
+    width: 70px;
+    height: 70px;
+    top: 5116px;
+    left: 302px;
+    gap: 0px;
+    border-radius: 35px ;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: grey;    
 }
 
 @media screen and (max-width: 1024px) {
@@ -677,7 +756,10 @@ p {
     border-radius: 12px;
     height: 600px;
 }
-
+.newsletter-container{
+    display: flex;
+    gap: 100px;
+}
 .newsletter-content {
     flex: 1;
     color: white;
@@ -685,7 +767,7 @@ p {
 
 .newsletter-content h4 {
     font-size: 18px;
-    color: #888;
+
     margin-bottom: 10px;
 }
 
@@ -696,12 +778,11 @@ p {
 
 .newsletter-content p {
     font-size: 16px;
-    color: #888;
+
 }
 
 .newsletter-form {
     flex: 1;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -725,6 +806,11 @@ p {
 
 .newsletter-form input:focus {
     outline: none;
+}
+.letter-form-container{
+    display: flex;
+    align-items: center;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -761,6 +847,11 @@ p {
     justify-content: space-between;
     margin-bottom: 40px;
 }
+@media screen and (max-width:450px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
 
 .contact-info {
     flex: 1;
@@ -773,14 +864,16 @@ p {
     background-color: #282A36;
     padding: 20px;
     border-radius: 8px;
-    display: flex;v
+    display: flex;
 }
 
-.info-box h4 {
-    font-size: 18px;
-    color: #FF6347;
-    margin-bottom: 10px;
+.info-box-img{
+    height: 80px;
+    width: 80px;
+    align-content: center;
 }
+
+
 
 .info-box p {
     font-size: 16px;
